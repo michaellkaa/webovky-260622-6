@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--first-color);
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.load img {
+    width: 20px;
+    height: auto;
+    
+    margin: 0%;
+   
+}
+
+#load-logo {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    height: 250px;
+    width: auto;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.star-icon {
+    color: var(--second-color);
+    padding: 12px;
+}
+
+.star-icon:hover {
+    color: var(--third-color);
+}
+
+.home-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.home-icon:hover {
+    color: var(--third-color);
+}
+
+.portfolio-icon {
+    color: var(--second-color);
+    padding: 12px;
+    text-decoration: none;
+}
+
+.portfolio-icon:hover {
+    color: var(--third-color);
+}
+
+.sloh1 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.dopis-v-lahvi h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--second-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.dopis-v-lahvi img {
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--second-color) ;
+}
+
+.dopis-v-lahvi img:hover {
+    border-color: var(--third-color) ;
+    transition: 200ms;
+}
+
+.dopis-v-lahvi a {
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.sloh2 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.mami h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--second-font);
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.mami img {
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--second-color) ;
+}
+
+.mami img:hover {
+    border-color: var(--third-color) ;
+    transition: 200ms;
+}
+
+.mami a {
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    
+}
