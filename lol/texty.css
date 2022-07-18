@@ -9,12 +9,10 @@ body {
 }
 
 
-.load img {
+.loader img {
     width: 20px;
     height: auto;
-    
-    margin: 0%;
-   
+
 }
 
 #load-logo {
@@ -23,11 +21,13 @@ body {
     left: 38%;
     height: 250px;
     width: auto;
+    
 }
 
 .invert {
     filter: invert(100%);
 }
+
 
 .icons {
     text-align: center;

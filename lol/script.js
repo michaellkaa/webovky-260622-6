@@ -29,13 +29,6 @@ function changeColorMode () {
 
 
 
-
-
-
-
-console.log(localStorage.getItem("colorMode"));
-
-
 setColorMode();
 
 function changeImage () {

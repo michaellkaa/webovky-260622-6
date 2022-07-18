@@ -20,49 +20,50 @@
     </div>
     <span style="display:none;" id="home" class="homepage"></span>
 
-<div class="texty" >
-    <div class="icons">
-        <a href="index.html" class="home-icon">
-            <ion-icon name="home-outline"></ion-icon>
-        </a>
-
-        <a href="portfolio.html" class="portfolio-icon">
-            <ion-icon name="reader-outline"></ion-icon>
-        </a>
-
-        <a href="#" class="star-icon" onclick="changeColorMode()">
-            <ion-icon name="star-half-outline"></ion-icon>
-        </a>
-
-    </div>
-
-    <div class="dopis-v-lahvi">
-        <h4>vzkaz v lahvi</h4>
-        <div class="sloh1">
-        <a href="dopis v lahvi (1).png" target="_blank">
-        <img src="dopis v lahvi (1).png" alt=""></a>
-        <a href="dopis v lahvi (2).png" target="_blank">
-        <img src="dopis v lahvi (2).png" alt=""></a>
-        <a href="dopis v lahvi (3).png" target="_blank">
-        <img src="dopis v lahvi (3).png" alt=""></a>
+    <div class="texty" >
+        <div class="icons">
+            <a href="index.html" class="home-icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+    
+            <a href="portfolio.html" class="portfolio-icon">
+                <ion-icon name="reader-outline"></ion-icon>
+            </a>
+    
+            <a href="#" class="star-icon" onclick="changeColorMode()">
+                <ion-icon name="star-half-outline"></ion-icon>
+            </a>
+    
+        </div>
+    
+        <div class="dopis-v-lahvi">
+            <h4>vzkaz v lahvi</h4>
+            <div class="sloh1">
+            <a href="dopis v lahvi (1).png" target="_blank"></a>
+            <img src="dopis v lahvi (1).png" alt=""></a>
+            <a href="dopis v lahvi (2).png" target="_blank">
+            <img src="dopis v lahvi (2).png" alt=""></a>
+            <a href="dopis v lahvi (3).png" target="_blank">
+            <img src="dopis v lahvi (3).png" alt=""></a>
+            </div>
+        </div>
+       
+        <div class="mami">
+            <h4>mami?</h4>
+            <div class="sloh2">
+            <a href="mami (1).png">
+                <img src="mami (1).png" alt="">
+            </a>
+            <a href="mami (2).png">
+                <img src="mami (2).png" alt="">
+            </a>
+            </div>
         </div>
     </div>
-   
-    <div class="mami">
-        <h4>mami?</h4>
-        <div class="sloh2">
-        <a href="mami (1).png">
-            <img src="mami (1).png" alt="">
-        </a>
-        <a href="mami (2).png">
-            <img src="mami (2).png" alt="">
-        </a>
-        </div>
-    </div>
-</div>
 <script src="script.js"></script>
-<script>
 
+  <script>
+  
     var timer;
     function loader() {
         timer = setTimeout(showPage, 2000);
@@ -75,8 +76,9 @@
 </script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>
-function changeImage () {
+<script>function changeImage () {
+    
+
     const logo2 = document.getElementById("load-logo")
 
     if (localStorage.getItem("colorMode") == "dark") {
@@ -84,9 +86,39 @@ function changeImage () {
     } else {
         logo2.classList.remove("invert");
     }
+
 }
 
-changeImage ();
-</script>
+changeImage ();</script>
+<script>function setColorMode() {
+    var elementBody = document.body;
+    
+    if (localStorage.getItem("colorMode") == "dark") {
+        elementBody.classList.add("dark-mode");
+    } else {
+        elementBody.classList.remove("dark-mode");
+    }
+
+
+
+};
+
+
+function changeColorMode () {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("colorMode", "dark");
+    } else {
+        localStorage.setItem("colorMode", "light");
+    }
+
+    console.log(localStorage.getItem("colorMode")); 
+};
+
+
+
+setColorMode();</script>
 </body>
 </html>
